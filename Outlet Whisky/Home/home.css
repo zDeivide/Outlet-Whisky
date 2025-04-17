@@ -1,10 +1,128 @@
-body{
-
-}
-.cabecalho{
+body {
+    margin: 0;
+    
+    background-color: white;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    background-color: #000;
+    color: white;
+    margin-left: 0px;
+  }
+  
+  
+  .logo .dot {
+    color: #ff5722;
+  }
+  
+  .logo .orange {
+    color: #ff5722;
+  }
+  
+  .search-box {
+    flex: 1;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-box input {
+    width: 85%;
+    padding: 12px 16px;
+    border-radius: 6px 0 0 6px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-box button {
+    background: white;
+    border: none;
+    padding: 4px;
+    border-radius: 0 px 6px 0;
+    cursor: pointer;
+  }
+  
+  .conta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: right;
+    font-size: 14px;
+    margin-right: 70px;
+  }
+  
+  .conta a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .cart img {
+    width: 24px;
+    cursor: pointer;
+  }
+
+  av{
+    border: solid 1px white;
+    background-color: #b37411;
+    text-align: center;
+    
     
 }
 
+nav{
+    border: solid 1px #b37411;
+    background-color: #b37411;
+    text-align: center;
+    margin: 0;
+    
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: 1.2s;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul li a:hover{
+    color: #050609;
+    scale: 125%;
+}
+
+.container-site{
+    display: flex;
+    background-image: url('wallpaper\ whisky.jpg');
+    color: white;
+    padding: 200px;
+    margin: 0;
+}
+
+
+
+
+.suas-misturas{
+    background-color: #b37411;
+    padding: 8px ;
+    background-color: #b37411; 
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 2px;
+}
