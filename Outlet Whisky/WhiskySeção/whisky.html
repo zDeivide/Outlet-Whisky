@@ -26,17 +26,24 @@
 </head>
 <body>
     <!-- Cabeçalho com logo e barra de pesquisa -->
-    <header>
-        <img src="imagens/Logo PNG.png" alt="logoloja" width="350px" height="200px">
-        <div class="container-fluid">
-            <form class="d-flex custom-search">
-                <input class="form-control me-2" type="search" placeholder="O que você procura?" aria-label="Pesquisar">
-                <button class="btn" type="submit">Buscar</button>
-            </form>
+    <header class="header">
+        <div class="logo"><img src="imagens/Logo PNG.png" alt="Logo OutletWhisky" width="150"> </div>
+        <div class="search-box">
+          <input type="text" placeholder="O que você procura?" />
+          <button><img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" alt="Buscar"></button>
         </div>
-        
-    </header>
-
+        <div class="conta">
+          <img src="https://img.icons8.com/ios-glyphs/30/ffffff/user--v1.png" alt="Conta">
+          <span>Entre em sua conta<br><a href="#">ou cadastre-se</a></span><br>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+        </div>
+        <div class="cart">
+          <img src="https://img.icons8.com/ios-glyphs/30/ffffff/shopping-cart.png" alt="Carrinho">
+        </div>
+      </header>
 
     <!-- Menu de navegação -->
     <nav>
@@ -57,10 +64,40 @@
         <section>
         <h1>Whisky</h1>
         <p>Na loja oficial do Outlet dos Whiskies, você encontra marcas de whisky perfeitas para qualquer momento: preparar um drink especial para uma ocasião, saborear um on the rocks ou dominar coquetéis incríveis para os amigos. E ainda pode aproveitar ofertas exclusivas, promoções irresistíveis, kits e combos para presentear quem você ama.</p>
-        <h1>Navegue Por Marca</h1>
+        <h1><br>Navegue Por Marca</h1>
+        <button class="jonimg"></button>
+        <button class="jackimg"></button>
+
 
         </section>  
     </main>
+    <!-- Produtos -->
+        <section class="produtos">
+            <h2>Whiskies em Destaque</h2>
+            <div class="product-grid">
+              <div class="product-card">
+                <img src="https://drinksandco.vtexassets.com/arquivos/ids/163147-1200-1200?v=638001624340800000&width=1200&height=1200&aspect=true" alt="Whisky Chivas Regal 12 anos">
+                <h3>Chivas Regal 12 anos</h3>
+                <p>Chivas Regal 12 Anos <br>1L</p>
+                <p class="price">R$ 157,90</p>
+                <button class="compra">Adicionar 🛒</button>
+              </div>
+              <div class="product-card">
+                <img src="https://drinksandco.vtexassets.com/arquivos/ids/164544-1200-1200?v=638338593898100000&width=1200&height=1200&aspect=true" alt="Whisky Chivas Regal 13 anos">
+                <h3>Chivas Regal 13 anos</h3>
+                <p>Chivas Regal 13 Anos<br>750ml</p>
+                <p class="price">R$ 173,90</p>
+                <button class="compra">Adicionar 🛒</button>
+              </div>
+              <div class="product-card">
+                <img src="https://drinksandco.vtexassets.com/arquivos/ids/165464-1200-1200?v=638786078431770000&width=1200&height=1200&aspect=true" alt="Royal Salute 21 anos">
+                <h3>Royal Salute 21 anos</h3>
+                <p>Royal Salute 21 Anos <br>700ml</p>
+                <p class="price">R$ 1.687,90</p>
+                <button class="compra">Adicionar 🛒</button>
+              </div>
+            </div>
+        </section>
     
 </body>
 </html>

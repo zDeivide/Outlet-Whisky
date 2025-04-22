@@ -5,6 +5,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+.compra{
+    background-color: #b37411;
+    padding: 8px ;
+    background-color: #b37411; 
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 2px;
+}
+
 p{
     font-family: 'Poppins', sans-serif;
     font-size: 1.1rem;
@@ -21,8 +30,68 @@ body{
 header{
     border: 1px solid white;
     background-color: #050609;
-    
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    background-color: #000;
+    color: white;
+    margin-left: 0px;
 }
+
+.logo .dot {
+    color: #ff5722;
+  }
+  
+  .logo .orange {
+    color: #ff5722;
+  }
+  
+  .search-box {
+    flex: 1;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-box input {
+    width: 85%;
+    padding: 12px 16px;
+    border-radius: 6px 0 0 6px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-box button {
+    background: white;
+    border: none;
+    padding: 4px;
+    border-radius: 0 px 6px 0;
+    cursor: pointer;
+  }
+  
+  .conta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: right;
+    font-size: 14px;
+    margin-right: 70px;
+  }
+  
+  .conta a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .cart img {
+    width: 24px;
+    cursor: pointer;
+  }
+
 
 nav{
     border: solid 1px white;
@@ -72,6 +141,7 @@ main{
 
 
 section{
+    background-color: #FFF8F0;
     margin-left: 2rem;
     margin-top: 1rem;
 }
@@ -96,3 +166,172 @@ section{
 .custom-search .btn:hover {
     background-color: #b37411; /* Cor de hover */
 }
+
+.jonimg{
+        margin-bottom: 2rem;
+        margin-left: 16rem;  
+        margin-top: 3rem;     
+        width: 400px; /* Largura do botão */
+        height: 150px; /* Altura do botão */
+        background-image: url('imagens/Johnnie-Walker-Logo-1996-2015-removebg-preview.png'); /* Caminho da sua imagem */
+        background-size: cover; /* Ajusta a imagem para cobrir todo o botão */
+        background-position: center; /* Centraliza a imagem */
+        border: none; /* Remove a borda */
+        color: white; /* Cor do texto */
+        font-size: 16px; /* Tamanho da fonte */
+        cursor: pointer; /* Mostra o cursor de clique */
+        transition: 1.2s;
+        border-radius: 15px; /* Borda arredondada */
+}
+
+
+.jonimg:hover{
+    scale: 125%;
+}
+
+
+.jackimg{
+        margin-bottom: 2rem;
+        margin-left: 20rem; /* Adiciona margem à esquerda */
+        margin-top: 3rem;     
+        width: 400px; /* Largura do botão */
+        height: 255px; /* Altura do botão */
+        background-image: url('imagens/Jack.png'); /* Caminho da sua imagem */
+        background-size: cover; /* Ajusta a imagem para cobrir todo o botão */
+        background-position: center; /* Centraliza a imagem */
+        border: none; /* Remove a borda */
+        color: white; /* Cor do texto */
+        font-size: 16px; /* Tamanho da fonte */
+        cursor: pointer; /* Mostra o cursor de clique */
+        transition: 1.2s;
+        border-radius: 15px; /* Borda arredondada */
+}
+
+.jackimg:hover{
+    scale: 125%;
+}
+
+.suas-misturas{
+    background-color: #b37411;
+    padding: 8px ;
+    background-color: #b37411; 
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.switch {
+  display: block;
+  --width-of-switch: 3.5em;
+  --height-of-switch: 2em;
+  
+  --size-of-icon: 1.4em;
+  
+  --slider-offset: 0.3em;
+  position: relative;
+  width: var(--width-of-switch);
+  height: var(--height-of-switch);
+}
+
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4f4f5;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: var(--size-of-icon,1.4em);
+  width: var(--size-of-icon,1.4em);
+  border-radius: 20px;
+  left: var(--slider-offset,0.3em);
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+  ;
+ transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #303136;
+}
+
+input:checked + .slider:before {
+  left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+  background: #303136;
+  
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+
+.product-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    border-radius: 48px;
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .product-card .price {
+    font-weight: bold;
+    color: #e63946;
+  }
+  
+  .product-card button {
+    background-color: #CD8913;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .product-card button:hover {
+    background-color: #050609;
+  }
+.price{
+    font-size: 1.4rem;
+    color: #ff8c00;
+    font-family: 'Poppins', sans-serif ;
+}  
