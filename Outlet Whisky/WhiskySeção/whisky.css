@@ -79,6 +79,12 @@ header{
     text-align: right;
     font-size: 14px;
     margin-right: 70px;
+    cursor: pointer;
+    transition: 1.2s;
+  }
+
+  .conta:hover{
+    scale: 115%;
   }
   
   .conta a {
@@ -90,6 +96,11 @@ header{
   .cart img {
     width: 24px;
     cursor: pointer;
+    transition: 1.2s;
+  }
+
+  .cart img:hover{
+    scale: 155%;
   }
 
 
@@ -170,7 +181,7 @@ section{
 
 .jonimg{
         margin-bottom: 2rem;
-        margin-left: 16rem;  
+        margin-left: 15rem;  
         margin-top: 3rem;     
         width: 400px; /* Largura do botão */
         height: 150px; /* Altura do botão */
@@ -196,11 +207,11 @@ section{
 
 .jackimg{
         margin-bottom: 2rem;
-        margin-left: 20rem; /* Adiciona margem à esquerda */
+        margin-left: 25rem; /* Adiciona margem à esquerda */
         margin-top: 3rem;     
-        width: 400px; /* Largura do botão */
-        height: 255px; /* Altura do botão */
-        background-image: url('imagens/Jack.png'); /* Caminho da sua imagem */
+        width: 200px; /* Largura do botão */
+        height: 155px; /* Altura do botão */
+        background-image: url('imagens/R-removebg-preview.png'); /* Caminho da sua imagem */
         background-size: cover; /* Ajusta a imagem para cobrir todo o botão */
         background-position: center; /* Centraliza a imagem */
         border: none; /* Remove a borda */
@@ -312,6 +323,7 @@ input:checked + .slider:before {
     box-shadow: 10px 10px 20px #CD8913;
   }
 
+
   .product-card:hover {
     transform: scale(1.02);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -341,7 +353,7 @@ input:checked + .slider:before {
   }
 
   
-  
+
   .product-card button {
     background-color: #CD8913 ;
     color: white;
@@ -364,4 +376,37 @@ input:checked + .slider:before {
 
 .produtos{
     margin-left: -1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .jonimg{
+      width: 300px; /* Largura do botão */
+      height: 100px; /* Altura do botão */
+      position: relative;
+      top: 11rem;
+      left: 3rem;
+        
+    }
+
+    .jackimg{
+      margin-left: auto;
+    }
+
+    .conta{
+      position: relative;
+      left: 1rem;
+    }
+
+    .conta:hover{
+      scale: 105%;
+    }
+
+    .cart:hover{
+      scale: 105%;
+    }
+  
 }
