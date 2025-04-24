@@ -157,6 +157,12 @@ section{
     margin-left: 2rem;
     margin-top: 1rem;
 }
+
+.marca{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
 .custom-search {
     max-width: 400px; /* Reduz o tamanho */
     margin: auto; /* Centraliza */
@@ -210,7 +216,7 @@ section{
         margin-left: 25rem; /* Adiciona margem à esquerda */
         margin-top: 3rem;     
         width: 200px; /* Largura do botão */
-        height: 155px; /* Altura do botão */
+        height: 195px; /* Altura do botão */
         background-image: url('imagens/R-removebg-preview.png'); /* Caminho da sua imagem */
         background-size: cover; /* Ajusta a imagem para cobrir todo o botão */
         background-position: center; /* Centraliza a imagem */
@@ -219,7 +225,7 @@ section{
         font-size: 16px; /* Tamanho da fonte */
         cursor: pointer; /* Mostra o cursor de clique */
         transition: 1.2s;
-        border-radius: 15px; /* Borda arredondada */
+        border-radius: 13px; /* Borda arredondada */
         box-shadow: 10px 10px 20px #CD8913;
 }
 
@@ -308,7 +314,7 @@ input:checked + .slider:before {
   
   .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
     gap: 20px;
     
   }
