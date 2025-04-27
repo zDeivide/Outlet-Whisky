@@ -177,7 +177,7 @@ nav ul li a:hover{
   transform: translateY(-50%);
   background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
   ;
- transition: .4s;
+ transition: .3s;
 }
 
 input:checked + .slider {
