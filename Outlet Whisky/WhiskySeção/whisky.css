@@ -34,9 +34,7 @@ body{
     color: #FFF8F0;
 }
 header{
-    border: 1px solid white;
     background-color: #050609;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -105,12 +103,10 @@ header{
 
 
 nav{
-    border: solid 1px white;
     background-color: #b37411;
     text-align: center;
-    padding: 15px;
-    
-    
+    display: flex;
+    justify-content: center;
 }
 nav ul li{
     display: inline-block;
@@ -382,6 +378,7 @@ input:checked + .slider:before {
 
 .produtos{
     margin-left: -1rem;
+    padding: 15px 4%;
 }
 
 @media screen and (max-width: 768px) {
