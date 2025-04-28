@@ -8,6 +8,7 @@ btn_login.addEventListener('click', login);
 function login(){
     if(email == mail_login.value && password == pass_login.value){
         alert("Login realizado com sucesso!");
+        btn_login.href = "../Home/index.html";
         var log = true
         localStorage.setItem("log", log);
     } else{

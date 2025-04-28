@@ -154,10 +154,13 @@ body {
     cursor: pointer;
     align-self: center;
     width: 70%;
+    transition: .3s ease-in-out;
   }
   
   .box-form #box-login:hover {
     background-color: #944f09;
+    transform: scale(1.05);
+    box-shadow: #944f09 0 0 10px;
   }
   
   .whisky-img {

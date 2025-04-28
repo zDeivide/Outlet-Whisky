@@ -10,6 +10,13 @@ btn_cadastrar.addEventListener('click', salvar);
 function salvar(){
     
     if(password.value == confirmation.value && user.value != '' && email.value != ''){
+
+            if('@' in email.value){
+                email.value = email.value;
+            } else{
+                alert('Digite um endereço de email valido')
+            }
+
             localStorage.setItem("user", user.value);
             localStorage.setItem("password", password.value);
             localStorage.setItem("email", email.value);
