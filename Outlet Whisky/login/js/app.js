@@ -8,15 +8,14 @@ var log = false
 btn_cadastrar.addEventListener('click', salvar);
 
 function salvar(){
-
-    if(password.value == confirmation.value){
+    if(password.value == confirmation.value && user.value != '' && email.value != ''){
             localStorage.setItem("user", user.value);
             localStorage.setItem("password", password.value);
             localStorage.setItem("email", email.value);
             alert("Cadastro realizado com sucesso!");
             log = true
     } else{
-        alert("Senhas Não Estão Iguais!");
+        alert("Senhas Não Estão Iguais ou tem campos que não foram preenchidos!");
     }
     
 }
