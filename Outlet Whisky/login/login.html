@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/login.css" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <header id="box-header" class="header">
+      <picture id="logo-outlet" class="outlet-logo">
+        <!-- Logotipo Outlet Whisky -->
+        <img src="../Home/assets/Logo PNG.png" alt="Logo" width="150" />
+      </picture>
+      <div class="search-box">
+        <input type="text" placeholder="O que você procura?" />
+        <button>
+          <img
+            src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png"
+            alt="Buscar"
+          />
+        </button>
+      </div>
+      <div class="conta">
+        <img
+          src="https://img.icons8.com/ios-glyphs/30/ffffff/user--v1.png"
+          alt="Conta"
+        />
+        <span
+          >Entre em sua conta<br /><a
+            href="cadastro.html"
+            >ou cadastre-se</a
+          ></span>
+        <label class="switch">
+          <input type="checkbox" id="btn-color">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <!-- <button><a href="index.html">Não tem conta?</a></button> -->
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/Outlet Whisky/Home/index.html">Home</a></li>
+        <li><a href="/Outlet Whisky/WhiskySeção/whisky.html">Whisky</a></li>
+        <li><a href="/Outlet Whisky/GinSeção/gin.html">Gin</a></li>
+        <li><a href="/Outlet Whisky/VodkaSeção/vodka.html">Vodka</a></li>
+      </ul>
+    </nav>
+    <!-- Box de Cadastro e Login -->
+    <main>
+      <section id="section-form" class="login-form">
+        <form id="formulario" class="box-form" action="">
+          <input
+            type="email"
+            id="box-email"
+            class="email"
+            placeholder="Email:"
+            required
+          />
+          <input
+            type="password"
+            id="box-senha"
+            class="senha"
+            placeholder="Senha:"
+            required
+          />
+          <input type="submit" value="Entrar" id="box-login">
+        </form>
+
+        
+        <section class="whisky-img">
+          <picture>
+            <img
+              src="../Home/assets/wallpaper whisky.jpg"
+              alt="Foto de Gin"
+            />
+          </picture>
+        </section>
+      </section>
+      <br />
+      <section class="nav-bar">
+        <img
+          src="../Home/assets/icone caminhao.png"
+          alt=""
+          width="50"
+          height="auto"
+        />
+        <p>Entregamos em todo o Brasil<br /><a href="#"> Saiba mais </a></p>
+        <p>Parcele em até 6x<br />Sem juros no cartão de crédito</p>
+        <p>Site seguro<br />Sua compra e dados protegidos</p>
+      </section>
+    </main>
+
+    <script type="module" src="js/log.js"></script>
+  </body>
+</html>

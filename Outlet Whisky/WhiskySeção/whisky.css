@@ -3,6 +3,12 @@
     src: url(fontes/LEMONMILK-RegularItalic.otf) format('opentype');
 }
 
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .compra{
@@ -28,9 +34,7 @@ body{
     color: #FFF8F0;
 }
 header{
-    border: 1px solid white;
     background-color: #050609;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -79,7 +83,7 @@ header{
     text-align: right;
     font-size: 14px;
     margin-right: 70px;
-  }
+}
   
   .conta a {
     color: white;
@@ -90,16 +94,19 @@ header{
   .cart img {
     width: 24px;
     cursor: pointer;
+    transition: 1.2s;
+  }
+
+  .cart img:hover{
+    scale: 155%;
   }
 
 
 nav{
-    border: solid 1px white;
     background-color: #b37411;
     text-align: center;
-    padding: 15px;
-    
-    
+    display: flex;
+    justify-content: center;
 }
 nav ul li{
     display: inline-block;
@@ -146,6 +153,24 @@ section{
     margin-left: 2rem;
     margin-top: 1rem;
 }
+
+#Sect{
+    width: 100%;
+    padding: 10px 3%;
+    margin: 0;
+}
+
+#Sect02{
+  width: 100%;
+  margin: 0;
+  padding: 10px 3%;
+}
+
+.marca{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
 .custom-search {
     max-width: 400px; /* Reduz o tamanho */
     margin: auto; /* Centraliza */
@@ -170,7 +195,7 @@ section{
 
 .jonimg{
         margin-bottom: 2rem;
-        margin-left: 16rem;  
+        margin-left: 15rem;  
         margin-top: 3rem;     
         width: 400px; /* Largura do botão */
         height: 150px; /* Altura do botão */
@@ -196,11 +221,11 @@ section{
 
 .jackimg{
         margin-bottom: 2rem;
-        margin-left: 20rem; /* Adiciona margem à esquerda */
+        margin-left: 25rem; /* Adiciona margem à esquerda */
         margin-top: 3rem;     
-        width: 400px; /* Largura do botão */
-        height: 255px; /* Altura do botão */
-        background-image: url('imagens/Jack.png'); /* Caminho da sua imagem */
+        width: 200px; /* Largura do botão */
+        height: 195px; /* Altura do botão */
+        background-image: url('imagens/R-removebg-preview.png'); /* Caminho da sua imagem */
         background-size: cover; /* Ajusta a imagem para cobrir todo o botão */
         background-position: center; /* Centraliza a imagem */
         border: none; /* Remove a borda */
@@ -208,7 +233,7 @@ section{
         font-size: 16px; /* Tamanho da fonte */
         cursor: pointer; /* Mostra o cursor de clique */
         transition: 1.2s;
-        border-radius: 15px; /* Borda arredondada */
+        border-radius: 13px; /* Borda arredondada */
         box-shadow: 10px 10px 20px #CD8913;
 }
 
@@ -297,24 +322,27 @@ input:checked + .slider:before {
   
   .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
     gap: 20px;
     
   }
   
   .product-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border: 1px solid #CD8913;
+    background-color: #FFF8F0;
+    border-radius: 12px;
     padding: 15px;
     text-align: center;
     cursor: pointer;
-    transition: 1.2s;
-    box-shadow: 10px 10px 20px #CD8913;
+    box-shadow: 2px 2px 10px #CD8913;
+
+    transition: .5s ease-in-out;
   }
+
 
   .product-card:hover {
     transform: scale(1.02);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 7px 7px 20px #CD8913;
     background-color: #f9f9f9;
   }
   
@@ -341,7 +369,7 @@ input:checked + .slider:before {
   }
 
   
-  
+
   .product-card button {
     background-color: #CD8913 ;
     color: white;
@@ -364,4 +392,38 @@ input:checked + .slider:before {
 
 .produtos{
     margin-left: -1rem;
+    padding: 15px 4%;
+}
+
+@media screen and (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .jonimg{
+      width: 300px; /* Largura do botão */
+      height: 100px; /* Altura do botão */
+      position: relative;
+      top: 11rem;
+      left: 3rem;
+        
+    }
+
+    .jackimg{
+      margin-left: auto;
+    }
+
+    .conta{
+      position: relative;
+      left: 1rem;
+    }
+
+    .conta:hover{
+      scale: 105%;
+    }
+
+    .cart:hover{
+      scale: 105%;
+    }
+  
 }
