@@ -48,7 +48,7 @@
     <main>
       <div class="container-cadastro">
         <section>
-          <form id="formulario" class="box-form">
+          <form id="formulario" class="box-form" action="login.html">
             <input
               type="text"
               id="box-name"
@@ -77,12 +77,13 @@
               placeholder="Confirme a Senha:"
               required
             />
-            <button type="submit" id="box-cadastrar" class="cadastre-se">
-              <a href="login.html">Cadastre-se</a>
-            </button>
+            <input type="submit" value="Cadastre-se" id="box-cadastrar" class="cadastre-se">
+
           </form>
         </section>
-        <br />
+
+        <br/>
+
         <section id="box-img-w" class="whisky-img">
           <picture>
             <img
@@ -104,5 +105,7 @@
         <p>Site seguro<br />Sua compra e dados protegidos</p>
       </section>
     </main>
+
+    <script src="js/app.js"></script>
   </body>
 </html>
