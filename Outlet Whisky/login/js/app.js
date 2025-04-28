@@ -15,6 +15,8 @@ function salvar(){
             localStorage.setItem("email", email.value);
             alert("Cadastro realizado com sucesso!");
             log = true
+    } else{
+        alert("Senhas Não Estão Iguais!");
     }
     
 }
