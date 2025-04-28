@@ -1,7 +1,6 @@
 /* Cores #000,  white, #ff5722, */
 body {
     margin: 0;
-  
     background-color: white;
     font-family: "Arial", sans-serif;
   }
@@ -164,6 +163,7 @@ body {
     align-items: center;
     width: 100%;
     margin: 0;
+    padding: 0;
   }
 
   .whisky-img { /*Estilizando a imagem*/

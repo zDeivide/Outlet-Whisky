@@ -28,7 +28,7 @@
         />
         <span
           >Entre em sua conta<br /><a
-            href="/Outlet Whisky/Cadastro-Login/index.html"
+            href="cadastro.html"
             >ou cadastre-se</a
           ></span
         ><br />
@@ -51,12 +51,13 @@
     <!-- Box de Cadastro e Login -->
     <main>
       <section id="section-form" class="login-form">
-        <form id="formulario" class="box-form">
+        <form id="formulario" class="box-form" action="">
           <input
             type="email"
             id="box-email"
             class="email"
             placeholder="Email:"
+            required
           />
           <input
             type="password"
@@ -67,6 +68,8 @@
           />
           <input type="submit" value="Entrar" id="box-login">
         </form>
+
+        
         <section class="whisky-img">
           <picture>
             <img
@@ -90,6 +93,6 @@
       </section>
     </main>
 
-    <script type="module" src="main.js"></script>
+    <script type="module" src="js/log.js"></script>
   </body>
 </html>
