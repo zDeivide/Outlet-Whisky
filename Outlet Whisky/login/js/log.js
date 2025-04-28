@@ -8,6 +8,8 @@ btn_login.addEventListener('click', login);
 function login(){
     if(email == mail_login.value && password == pass_login.value){
         alert("Login realizado com sucesso!");
+        var log = true
+        localStorage.setItem("log", log);
     } else{
         alert("Email ou Senha Incorretos!");
     }

@@ -54,10 +54,10 @@ function changeBackground(){
 
 //Função Adicionar No Carrinho
 
-for(var i = 0; i < btn_compra.length; i++){
-    btn_compra[i].addEventListener('click', adicionarCarrinho);
-}
 
 function adicionarCarrinho(){
     alert("Produto Adicionado ao Carrinho");
+}
+for(var i = 0; i < btn_compra.length; i++){
+    btn_compra[i].addEventListener('click', adicionarCarrinho);
 }

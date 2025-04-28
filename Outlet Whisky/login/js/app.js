@@ -3,7 +3,7 @@ var password = document.getElementById("box-senha");
 var confirmation = document.getElementById("box-confirmacao");
 var email = document.getElementById("box-email");
 var btn_cadastrar = document.getElementById("box-cadastrar");
-var log = false
+
 
 btn_cadastrar.addEventListener('click', salvar);
 
@@ -13,7 +13,6 @@ function salvar(){
             localStorage.setItem("password", password.value);
             localStorage.setItem("email", email.value);
             alert("Cadastro realizado com sucesso!");
-            log = true
     } else{
         alert("Senhas Não Estão Iguais ou tem campos que não foram preenchidos!");
     }
