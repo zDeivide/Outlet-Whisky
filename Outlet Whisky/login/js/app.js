@@ -8,6 +8,7 @@ var btn_cadastrar = document.getElementById("box-cadastrar");
 btn_cadastrar.addEventListener('click', salvar);
 
 function salvar(){
+    
     if(password.value == confirmation.value && user.value != '' && email.value != ''){
             localStorage.setItem("user", user.value);
             localStorage.setItem("password", password.value);
