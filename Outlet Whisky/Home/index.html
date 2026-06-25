@@ -23,7 +23,79 @@
         </label>
         </div>
         <div class="cart">
-          <img src="https://img.icons8.com/ios-glyphs/30/ffffff/shopping-cart.png" alt="Carrinho">
+          
+          <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+
+    <link rel="stylesheet" href="estilocarrinho.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Ícone -->
+    <div class="cart-icon" onclick="toggleCart()">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">2</span>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" onclick="toggleCart()"></div>
+
+    <!-- Carrinho -->
+    <div id="cartSidebar" class="cart-sidebar">
+
+        <div class="cart-header">
+            <h2>Meu Carrinho</h2>
+            <span class="close-btn" onclick="toggleCart()">✖</span>
+        </div>
+
+        <div class="cart-content">
+
+            <div class="cart-item">
+                <img src="https://via.placeholder.com/80x100" alt="Produto">
+
+                <div>
+                    <h4>Jack Daniel's</h4>
+                    <p>R$ 149,90</p>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img src="https://via.placeholder.com/80x100" alt="Produto">
+
+                <div>
+                    <h4>Chivas Regal</h4>
+                    <p>R$ 189,90</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cart-footer">
+            <h3>Total: R$ 339,80</h3>
+
+            <button>Finalizar Compra</button>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleCart() {
+            document
+                .getElementById("cartSidebar")
+                .classList.toggle("active");
+
+            document
+                .getElementById("overlay")
+                .classList.toggle("active");
+        }
+    </script>
+
+</body>
         </div>
       </header>
 
